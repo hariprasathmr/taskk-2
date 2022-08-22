@@ -1,0 +1,111 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: montserrat;
+    background-image: url("https://thumbs.dreamstime.com/b/cartoon-nature-landscape-mountain-forest-deciduous-trees-trunks-clearance-high-rock-fluffy-clouds-evening-sunlight-197501384.jpg");
+    height: 100vh;
+    
+    background-size: cover;
+    background-position: cover;
+    background-position: center;
+}
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: rgba(95, 94, 94, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+
+}
+.center h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid rgb(250, 250, 250);
+}
+.center form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+form .txt_field{
+    position: relative;
+    border-bottom: 2px solid #fffcfc;
+    margin: 30px 0;
+}
+.txt_field input{
+    width: 100px;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16PX;
+    border: none;
+    background: none;
+    outline: none;
+}
+.txt_field label{
+    position:absolute;
+    top: 50%;
+    left: 5px;
+    color: #ffffff;
+    transform: translate(-50);
+    font-size: 16px;
+    pointer-events: none ;
+    transition: 0.5s;
+}
+.txt_field span::before{
+    content:' ';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100px;
+    height: 2px;
+    background: #f6fd90;
+    transition: 0.5s;
+}
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label{
+    top: -5px;
+    color: #f5eeee;
+}
+.txt_field input:focus ~ span::before,
+.txt_field input:valid ~ span::before{
+    width: 100%;
+}
+.pass{
+    margin: -5px 0 20px 5px;
+    color: #f3f5e2;
+    cursor: pointer;
+}
+.pass:hover{
+    text-decoration: underline;
+}
+.login{
+    width: 300px;
+    height: 50px;
+    border: 1px solid;
+    background: #61b6ee;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #e1e7eb;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+.login:hover{
+    border-color:#30383d;
+    transition: 0.5s;
+}
+.signup_link{
+    margin: 30px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #f3e8e8;
+}
+.signup_link a{
+    color: #0095f8;
+    text-decoration: none;
+}
+.signup_link a:hover{
+    text-decoration: underline;
+}
